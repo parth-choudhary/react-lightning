@@ -1,0 +1,12 @@
+//plugins {
+//    id "org.golang.mobile.bind" version "0.2.6"
+//}
+
+configurations.maybeCreate("default")
+artifacts.add("default", file('Lndmobile.aar'))
+
+//gobind {
+//    pkg = "github.com/lightningnetwork/lnd/mobile"
+//    GOPATH = "/Users/parth/go/"
+//    GO = "/usr/local/bin/go"
+//}

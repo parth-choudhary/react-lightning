@@ -1,0 +1,6 @@
+-keep class com.reactlightning.MainApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.reactlightning.MainActivity { <init>(); }
+-keep class com.facebook.react.devsupport.DevSettingsActivity { <init>(); }

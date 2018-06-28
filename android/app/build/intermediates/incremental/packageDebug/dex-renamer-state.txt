@@ -1,0 +1,7 @@
+#Tue Jun 19 15:51:08 IST 2018
+base.0=/Users/parth/Projects/react-lightning/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/parth/Projects/react-lightning/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+base.1=/Users/parth/Projects/react-lightning/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+file.0=/Users/parth/Projects/react-lightning/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex

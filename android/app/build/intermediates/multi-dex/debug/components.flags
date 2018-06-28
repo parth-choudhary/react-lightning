@@ -1,0 +1,50 @@
+-injars /Users/parth/Projects/react-lightning/android/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /Users/parth/Projects/react-lightning/android/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /Users/parth/Library/Android/sdk/build-tools/23.0.1/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration /Users/parth/Projects/react-lightning/android/app/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class com.reactlightning.MainApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.reactlightning.MainActivity {
+    <init>();
+}
+
+-keep class com.facebook.react.devsupport.DevSettingsActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}
