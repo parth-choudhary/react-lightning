@@ -14,12 +14,12 @@ React Lightning is open source and will remain so.
 
 * Uses lnd as a daemon/library because it fully conforms to the BOLT specifications and is easy to cross-compile and run on mobile platforms.
 * There are two ways to cross-compile GO code  to .aar package for Android and .framework package for iOS **gomobile** and **xgo**, we have chosen gomobile, as LND team is working on a fully compatible version of LND with gomobile, so it's better to invest in the future.
-* We have used a separate branch of LND which makes it possible to cross compile with gomobile, as gomobile does not allow cross compiling of packages with a `main` function.
+* We have used a separate branch of LND which makes it possible to cross compile with gomobile, as gomobile does not allow cross compiling of packages with a `main()` function.
 * LND daemon exposes two interfaces RPC and REST, we will be using RPC interface to call the underlying functionality exposed by the cross compiled package.
 * Since the UI is built in React Native we need to write a react-native bridge for both iOS and Android, so as to interact with the cross compiled package. (Currently the UI is just for POC, we are working on it)
 * Currently the bridge is only written for Android in JAVA, we are working on the iOS version.
 * The project ships it's own `lnd.conf`, which has settings regarding the LND daemon and connects with the lightning network with some default running clients on the network.
-* The project ships with it's own 'rpc.proto' as well, it is create using grpc-web for allowing react native to make RPC's calls.
+* The project ships with it's own `rpc.proto` as well, it is create using grpc-web for allowing react native to make RPC's calls.
 
 # Architecture
 
@@ -35,11 +35,12 @@ But since javascript is async we had to create another function in react which i
 
 To add on the data sent over the wire is hex of the buffers to maintain data consistency, as the buffers in javascript and JAVA/Swift are not compatible/same.
 
-## TODO:
-* Update README with steps to build from source:
-1. gomobile
-2. grpc-web
-3. LND
+# TODOs:
+* Update README with steps to build:
+   * gomobile
+   * grpc-web
+   * LND
+   * lnd.conf
 * Create UI on Android.
 * Create UI and native bridge on iOS.
 * Deploy on App Store.
